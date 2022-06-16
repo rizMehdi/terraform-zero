@@ -4,7 +4,7 @@ st.header("Welcome to Terraform Zero")
 sent=False
 buttonDisabled=True
 
-if sent False:
+if sent is False:
   #form = st.form("my_form")
 
   picture = st.camera_input("First, take a picture of the tree")
