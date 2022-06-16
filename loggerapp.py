@@ -1,8 +1,8 @@
 import streamlit as st
-import SessionState
+#import SessionState
 
 st.header("Welcome to Terraform Zero")
-session_state = SessionState.get(checkboxed=False)
+#session_state = SessionState.get(checkboxed=False)
 
 sent=False
 buttonDisabled=True
@@ -28,8 +28,8 @@ if sent is False:
   if st.button("Submit Report",disabled=buttonDisabled):
     sent=True
     st.write("Report sent. Thanks a lot")
-    if st.button('Click here for making a new report') or session_state.checkboxed:
-      session_state.checkboxed = True
+    #if st.button('Click here for making a new report') or session_state.checkboxed:
+     # session_state.checkboxed = True
 
   if buttonDisabled==True:
     st.warning("Take a picture before submitting")
