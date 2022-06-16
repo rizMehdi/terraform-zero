@@ -20,5 +20,5 @@ otherinfo = st.text_input("add any other comments here, like damage to tree etc"
 st.button("Submit Report",disabled=buttonDisabled)
 # Now add a submit button to the form:
 if buttonDisabled==True:
-  st.write("Take a picture before submitting")
+  st.warning("Take a picture before submitting")
  
