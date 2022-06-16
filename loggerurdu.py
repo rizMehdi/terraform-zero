@@ -4,7 +4,7 @@ import streamlit as st
 st.header("Welcome to Terraform Zero")
 st.markdown("""
 <style>
-input {
+write {
   unicode-bidi:bidi-override;
   direction: RTL;
 }
