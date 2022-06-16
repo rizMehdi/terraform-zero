@@ -23,9 +23,9 @@ if sent is not True:
 
 
 
-  if st.button("Submit Report",disabled=buttonDisabled)
+  if st.button("Submit Report",disabled=buttonDisabled):
     sent=True
-  # Now add a submit button to the form:
+
   if buttonDisabled==True:
     st.warning("Take a picture before submitting")
 else:
