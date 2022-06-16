@@ -2,6 +2,18 @@ import streamlit as st
 #import SessionState
 
 st.header("Welcome to Terraform Zero")
+
+st.markdown(
+    """
+    <link href="//db.onlinewebfonts.com/c/6b75b24d502dab23003320c2e1b2fc68?family=Adobe+Arabic" rel="stylesheet" type="text/css"/>
+    <style> bdi {font-family: 'Adobe Arabic';}</style>
+
+    <p><bdi>ٹیرافارم</bdi></p>
+    """,
+    unsafe_allow_html=True,
+)
+
+
 #session_state = SessionState.get(checkboxed=False)
 
 sent=False
