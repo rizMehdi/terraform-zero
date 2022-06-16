@@ -1,7 +1,7 @@
 import streamlit as st
 st.header("Welcome to Terraform Zero")
 
-sent=Flase
+sent=False
 buttonDisabled=True
 
 if sent is not True:
