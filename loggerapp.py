@@ -6,7 +6,6 @@ buttonDisabled=True
 
 if sent is False:
   #form = st.form("my_form")
-
   picture = st.camera_input("First, take a picture of the tree")
   if picture is not None:
     #st.image(picture)
@@ -25,6 +24,7 @@ if sent is False:
 
   if st.button("Submit Report",disabled=buttonDisabled):
     sent=True
+    st.write("Report sent. Thanks a lot")
 
   if buttonDisabled==True:
     st.warning("Take a picture before submitting")
