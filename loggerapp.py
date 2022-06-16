@@ -15,10 +15,11 @@ if picture is not None:
   
   
 loggername = st.text_input("your name (optional)")
-otherinfo = st.text_input("add any other comments here, like damage to tree etc")
-
 isDead=  st.checkbox("Click here if the tree is damaged or dead")
 needsHelp= st.checkbox("Click here if the tree needs immediate attention/care by Greensquad team")
+
+otherinfo = st.text_input("add any other comments here, like the extent of damage to tree etc")
+
 
 
 st.button("Submit Report",disabled=buttonDisabled)
