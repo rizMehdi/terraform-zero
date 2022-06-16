@@ -29,7 +29,6 @@ if sent is False:
   if buttonDisabled==True:
     st.warning("Take a picture before submitting")
 else:
-  sent=True
   st.write("Report sent. Thanks a lot")
   
 
