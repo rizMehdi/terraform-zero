@@ -2,21 +2,23 @@ import streamlit as st
 st.header("Welcome to Terraform Zero")
 
 
-pictureready=False
+buttonDisabled=True
 
-form = st.form("my_form")
+#form = st.form("my_form")
 
-picture = form.camera_input("First, take a picture of the tree")
+picture = st.camera_input("First, take a picture of the tree")
 if picture is not None:
   #st.image(picture)
-  pictureready=True
+  buttonDisabled=False
 
   
   
   
-loggername = form.text_input("your name (optional)")
-otherinfo = form.text_input("add any other comments here, like damage to tree etc")
+loggername = st.text_input("your name (optional)")
+otherinfo = st.text_input("add any other comments here, like damage to tree etc")
 
+st.button("Submit Report",disabled=buttonDisabled)
 # Now add a submit button to the form:
-if pictureready==True:
-  form.form_submit_button("Submit Report")
+if buttonDisabled==True:
+  st.write("Take a picture before submitting")
+ 
