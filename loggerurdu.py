@@ -11,6 +11,7 @@ write {
 </style>
     """, unsafe_allow_html=True)
 
+st.write("ٹیرافارم")
 st.markdown(
     """
     <link href="//db.onlinewebfonts.com/c/6b75b24d502dab23003320c2e1b2fc68?family=Adobe+Arabic" rel="stylesheet" type="text/css"/>
